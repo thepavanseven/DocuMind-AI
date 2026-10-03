@@ -1,20 +1,17 @@
-DocuMind AI
+### DocuMind AI
 RAG-Based Intelligent Document Question Answering System
-
-
-[Live Demo](https://documind-ai-dunqrvqw6yoef42rfooycj.streamlit.app/) 
 
 DocuMind AI is an intelligent document question-answering system built using Retrieval-Augmented Generation (RAG).
 
 The system allows users to upload PDF documents and ask natural-language questions about their contents. Instead of sending the entire document directly to an LLM, DocuMind AI retrieves the most relevant passages using semantic search and provides them as context to the language model.
 This helps produce answers that are grounded in the uploaded document and provides source page references for transparency.
 
-Project Overview
+## Project Overview
 
 DocuMind AI follows a complete Retrieval-Augmented Generation pipeline:
 PDF → Text Extraction → Chunking → Embeddings → FAISS Retrieval → LLM Generation → Grounded Answer
 The system combines document processing, semantic search, vector retrieval, and large language models into a single application.
-Key Features
+## Key Features
 - PDF document upload
 - Automatic text extraction from PDF files
 - Overlapping text chunking
@@ -29,7 +26,7 @@ Key Features
 - Answer grounding evaluation
 - Streamlit-based interface
 
-System Architecture
+## System Architecture
  
                     ┌─────────────────┐
                     │   PDF Document  │
@@ -81,7 +78,7 @@ System Architecture
                     └─────────────────┘
 
 
-Project Structure
+## Project Structure
 
 
 ```text
@@ -131,7 +128,7 @@ documind-ai/
 ├── README.md
 └── requirements.txt
  ```
-Main Components
+## Main Components
 
 - PDF Ingestion — Extracts text and page information from PDF documents.
 - Chunking — Splits documents into overlapping text segments.
@@ -142,7 +139,7 @@ Main Components
 - Evaluation — Tests retrieval quality and answer grounding.
 - Streamlit UI — Provides an interactive interface for uploading documents and asking questions.
 
-Technologies Used
+## Technologies Used
 
 - Python
 - Streamlit
@@ -154,24 +151,24 @@ Technologies Used
 - Large Language Models
 - Git & GitHub
 
-Installation
+## Installation
 
 git clone https://github.com/thesrisaga/documind-ai.git
 cd documind-ai
 pip install -r requirements.txt
 
-Environment Configuration
+## Environment Configuration
 
 Set your Groq API key as an environment variable:
 $env:GROQ_API_KEY="YOUR_API_KEY"
 Do not commit API keys or other secrets to GitHub.
 
-Running the Application
+## Running the Application
 
 streamlit run app/streamlit_app.py
 Upload a PDF document, enter a question, and DocuMind AI will retrieve relevant document passages and generate a grounded answer.
 
-Evaluation
+## Evaluation
 
 The project includes tests for:
 - PDF text extraction
@@ -183,7 +180,7 @@ The project includes tests for:
 - Retrieval evaluation
 - Answer grounding evaluation
 
-Application Preview
+## Application Preview
 
 ![DocuMind AI Application](screenshots/documind-home.png)
 
@@ -219,7 +216,7 @@ If a question cannot be answered using the uploaded documents, the system respon
 
 This helps reduce hallucinations and keeps generated answers grounded in the available document evidence.
  
-Future Improvements
+## Future Improvements
 
 - Multi-document support
 - Conversation history
