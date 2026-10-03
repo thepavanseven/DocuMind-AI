@@ -91,28 +91,28 @@ documind-ai/
 │
 ├── src/
 │   ├── ingestion/
-│   │   ├── __init__.py
-│   │   └── pdf_loader.py
+│   │   ├── pdf_loader.py
+│   │   
 │   │
 │   ├── preprocessing/
-│   │   ├── __init__.py
-│   │   └── chunker.py
+│   │   ├── chunker.py
+│   │   
 │   │
 │   ├── embeddings/
-│   │   ├── __init__.py
-│   │   └── embedding_model.py
+│   │   ├── embedding_model.py
+│   │   
 │   │
 │   ├── retrieval/
-│   │   ├── __init__.py
 │   │   ├── vector_store.py
-│   │   └── retriever.py
+│   │   ├── retriever.py
+│   │   
 │   │
 │   └── generation/
-│       ├── __init__.py
-│       └── llm.py
+│       ├── llm.py
+│       
 │
 ├── tests/
-│   ├── __init__.py
+│   
 │   ├── test_pdf.py
 │   ├── test_chunker.py
 │   ├── test_embeddings.py
@@ -229,5 +229,3 @@ Future Improvements
 - Improved UI/UX
 - Cloud deployment
 
-License
-This project is licensed under the MIT License.
