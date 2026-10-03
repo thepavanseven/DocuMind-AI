@@ -218,7 +218,6 @@ This helps reduce hallucinations and keeps generated answers grounded in the ava
  
 ## Future Improvements
 
-- Multi-document support
 - Conversation history
 - Improved source citation
 - RAG evaluation metrics
